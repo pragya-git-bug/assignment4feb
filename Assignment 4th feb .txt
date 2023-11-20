@@ -1,0 +1,102 @@
+Assignment 4th feb 
+
+Answer1
+
+import java.util.Scanner;
+
+//Q. Write a simple String program to take input from the user?
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("please enter your name...");
+		String name = sc.next();
+		System.out.println("Hello, "+name);
+		sc.close();
+	}
+
+}
+
+Answer2
+
+// Q. How do you concatenate two strings in java? Give an example?
+/*
+ * we can concatenate two strings in java using concate() method and + operator
+ * */
+public class Question2 {
+	public static void main(String a[]) {
+		
+		String s1 = "Kit";
+		String s2 = "Kat";
+		
+		String name = s1.concat(s2);
+		String name1 = s1+s2;
+		System.out.println(name);
+		System.out.println(name1);
+	}
+}
+
+Answer3
+public class Question3 {
+//Q. How do you find the length of a string in java? Explain with an example?
+
+// we can find length of string using length() method.
+	public static void main(String[] args) {
+		String name = "shubham";
+		System.out.println("length "+name.length());
+	}
+}
+
+Answer4
+public class Question4 {
+	public static void main(String a[]) {
+		String s1 = "shubham";
+		String s2 = "shubham";
+		System.out.println(s1.equals(s2));
+	}
+}
+
+Answer5
+public class Question5 {
+//Q. Write a program to find the length of a string ? refrigerator?.
+	
+	public static void main(String[] args) {
+		String s = "refrigerator";
+		System.out.println("length "+s.length());
+	}
+}
+
+Answer6
+
+
+public class Question6 {
+//Q. Write a program to check if letter 'e' is present
+// in the word "Umbrella".
+
+	public static void main(String[] args) {
+		String s = "Umberlla";
+		System.out.println(s.contains("e"));
+	}
+}
+
+Answer7
+
+public class Question7 {
+// Q. Write a program to delete all the consonants from the string
+// "Hello, have a good day".
+	public static void main(String[] args) {
+		String s = "Hello, have a good day";
+		s=s.toLowerCase();
+		String outputString = "";
+		for(int i=0 ; i<s.length() ; i++){
+			char c = s.charAt(i);
+			if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
+				continue;
+			}
+			outputString = outputString+c;
+		}
+		System.out.println(outputString);
+	}
+
+}
